@@ -482,11 +482,27 @@ ul.banner-social-buttons {
 
 footer {
   padding: 20px 0;
+  color: darkgray;
+  font-size:16px;
+}
+
+footer a{
+  color: darkgray;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+footer a.first{
+  padding-left: 0;
 }
 
 footer p {
   margin: 0;
   font-size:14px;
+}
+
+footer .bigicon{
+  font-size: 24px;
 }
 
 ::-moz-selection {
