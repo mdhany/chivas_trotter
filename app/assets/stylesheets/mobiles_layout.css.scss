@@ -531,9 +531,10 @@ body {
 
 
 /* FORMULARIO */
-.registrate input{
+form input, .registrate input{
   background: #000;
-  color:#a08c64;
+  color:#a08c64 !important;
+  border:1px solid #a08c64;
   text-transform:uppercase;
   text-align: center;
   font-size:18px;
@@ -541,9 +542,10 @@ body {
 
 }
 
-.registrate select{
+form select, .registrate select{
   background: #000;
   color:#a08c64;
+  border:1px solid #a08c64;
   text-transform:uppercase;
   text-align: center;
   font-size:18px;
@@ -559,6 +561,8 @@ body {
 input[type="file"]{
   background: none;
   display:inline-block;
+  border: dotted;
+  padding: 10px;
 }
 
 

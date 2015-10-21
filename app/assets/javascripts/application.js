@@ -27,7 +27,7 @@
 //= require jquery.fancybox
 //= require happy
 //= require happy.methods
-//= require turbolinks
+// require turbolinks
 //= require jquery.validate
 //= require_self
 
@@ -77,6 +77,28 @@ $(document).ready(function () {
             },
             number: "Este campo es requerido",
             picture: "Debe subir foto de factura"
+
+        }
+    });
+
+    $("#adulto").validate({
+        rules: {
+            'birth[(3i)]': {
+                required: true
+            },
+            'birth[(2i)]': {
+                required: true
+            },
+            'birth[(1i)]': {
+                required: true
+            }
+        },
+        messages: {
+
+            'birth[(3i)]': "Seleccione una opción",
+            'birth[(2i)]': "Seleccione una opción",
+            'birth[(1i)]': "Seleccione una opción"
+
 
         }
     });
