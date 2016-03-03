@@ -14,8 +14,9 @@ class MobileController < ApplicationController
     if fecha >= 18.years.ago #Menor de edad
       redirect_to home_path, alert: 'Usted es menor de edad. No puede acceder a este sitio.'
     else
-      redirect_to start_path
+      #redirect_to start_path
       session[:is_adult?] = true
+      redirect_to '/index.html'
     end
 
 
