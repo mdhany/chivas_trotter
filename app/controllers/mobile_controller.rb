@@ -24,7 +24,7 @@ class MobileController < ApplicationController
   end
 
   def comparte
-    render file: 'public/index.html'
+    render file: '/public/index.html'
     
   end
 
