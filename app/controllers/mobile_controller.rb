@@ -24,7 +24,7 @@ class MobileController < ApplicationController
   end
 
   def comparte
-    redirect_to '/index.html'
+    redirect_to '/amistad.html'
     
   end
 
