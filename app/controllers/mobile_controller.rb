@@ -16,16 +16,15 @@ class MobileController < ApplicationController
     else
       #redirect_to start_path
       session[:is_adult?] = true
-      redirect_to '/index.html'
+      redirect_to comparte_path
     end
 
 
 
   end
 
-  def redireccion
-    redirect_to 'index.html'
-    render false
+  def comparte
+    render file: 'public/index.html'
     
   end
 

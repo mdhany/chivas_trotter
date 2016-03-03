@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'home', to: 'mobile#home', as: 'home'
   post 'adult', to: 'mobile#adult?', as: 'adult'
   get 'start', to: 'mobile#start', as: 'start'
+  get 'comparte', to: 'mobile#comparte', as: 'comparte'
 
   post 'participate', to: 'mobile#participate', as: 'participate'
 
@@ -25,7 +26,7 @@ Rails.application.routes.draw do
 
 
   #root 'mobile#social'
-  root 'mobile#redireccion'
+  root 'mobile#comparte'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
