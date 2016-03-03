@@ -23,6 +23,13 @@ class MobileController < ApplicationController
 
   end
 
+  def redireccion
+    redirect_to 'index.html'
+    render false
+    
+  end
+
+
   def start
     @ganadores = Winner.all
 
